@@ -28,6 +28,25 @@ const toys = [
 ];
 // console.log(toys);
 
+const captianAmerica = {
+  id: 4,
+  name: "Captian America",
+  type: "Action Figure",
+  color: "red and blue",
+  manufacturer: "McFarlane Toys",
+  price: 45,
+};
+const thanos = {
+  id: 5,
+  name: "Thanos",
+  type: "Action Figure",
+  color: "gold and purple",
+  manufacturer: "McFarlane Toys",
+  price: 80,
+};
+
+toys.push(captianAmerica, thanos);
+
 for (const toy of toys) {
   console.log(toy.name);
 }
