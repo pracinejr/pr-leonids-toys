@@ -26,4 +26,8 @@ const toys = [
     price: 26.95,
   },
 ];
-console.log(toys);
+// console.log(toys);
+
+for (const toy of toys) {
+  console.log(toy.name);
+}
