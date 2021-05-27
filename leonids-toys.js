@@ -50,3 +50,9 @@ toys.push(captianAmerica, thanos);
 for (const toy of toys) {
   console.log(toy.name);
 }
+
+for (const toy of toys) {
+  console.log(
+    `${toy.manufacturer}'s ${toy.name} ${toy.type} has the colors of ${toy.color} and costs $${toy.price}.`
+  );
+}
