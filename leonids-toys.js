@@ -1,3 +1,5 @@
+const toyToFind = 2;
+
 const toys = [
   {
     id: 1,
@@ -47,18 +49,20 @@ const thanos = {
 
 toys.push(captianAmerica, thanos);
 
-for (const toy of toys) {
-  console.log(toy.name);
-}
+// for (const toy of toys) {
+//   console.log(toy.name);
+// }
 
+// for (const toy of toys) {
+//   console.log(
+//     `${toy.manufacturer}'s ${toy.name} ${toy.type} has the colors of ${toy.color} and costs $${toy.price}.`
+//   );
+// }
 for (const toy of toys) {
-  console.log(
-    `${toy.manufacturer}'s ${toy.name} ${toy.type} has the colors of ${toy.color} and costs $${toy.price}.`
-  );
-}
-for (const toy of toys) {
-  toy.price = toy.price * 1.05;
-  console.log(
-    `${toy.manufacturer}'s ${toy.name} ${toy.type} has the colors of ${toy.color} and costs $${toy.price}.`
-  );
+  if (toy.id === toyToFind) {
+    toy.price = toy.price * 1.05;
+    console.log(
+      `${toy.manufacturer}'s ${toy.name} ${toy.type} has the colors of ${toy.color} and costs $${toy.price}.`
+    );
+  }
 }
