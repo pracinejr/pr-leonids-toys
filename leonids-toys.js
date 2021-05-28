@@ -66,3 +66,29 @@ for (const toy of toys) {
     );
   }
 }
+
+const michelangelo = {
+  name: "Michelangelo",
+  type: "Ninja Turtle",
+  color: "Orange",
+  manufacturer: "Playmates Holdings Ltd",
+  price: 25.0,
+};
+
+const addToyToInventory = (toyObj) => {
+  const lastIndex = toys.length - 1;
+  const currentLastToy = toys[lastIndex];
+  const maxId = currentLastToy.id;
+  const idForNewToy = maxId + 1;
+
+  toyObj.id = idForNewToy;
+  toys.push(toyObj);
+};
+
+addToyToInventory(michelangelo);
+
+for (const toy of toys) {
+  console.log(
+    `${toy.manufacturer}'s ${toy.name} ${toy.type} has the colors of ${toy.color} and costs $${toy.price}.`
+  );
+}
