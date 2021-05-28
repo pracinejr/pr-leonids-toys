@@ -56,3 +56,11 @@ for (const toy of toys) {
     `${toy.manufacturer}'s ${toy.name} ${toy.type} has the colors of ${toy.color} and costs $${toy.price}.`
   );
 }
+as;
+dlfkjasd;
+lfkjad;
+asdfasdfasdf;
+
+asdf;
+lkjasdf;
+lkj;
